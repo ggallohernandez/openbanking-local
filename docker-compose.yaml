@@ -10,15 +10,9 @@ services:
       - .env
     ports:
       - "6800:6800"
+    volumes:
+      - ../openbanking-api:/app
     working_dir: /app
-    networks:
-      - openbanking-network
-
-  js-rendering-service:
-    container_name: js-rendering-service
-    image: scrapinghub/splash
-    ports:
-      - "8050:8050"
     networks:
       - openbanking-network
 
