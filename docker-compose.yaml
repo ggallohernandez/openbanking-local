@@ -9,7 +9,7 @@ services:
     env_file:
       - .env
     ports:
-      - "6800:6800"
+      - 6800:6800
     volumes:
       - ../openbanking-api:/app
     working_dir: /app
